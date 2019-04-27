@@ -50,10 +50,7 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>Searching For Books Here</h1>
-            </Jumbotron>
+          <Col size="md-6">  
             <SearchForm
               value={this.state.search}
               handleInputChange={this.handleInputChange}
@@ -61,9 +58,7 @@ class Books extends Component {
             />
           </Col>
           <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Result(s)</h1>
-            </Jumbotron>
+           
             {this.state.books.length ? (
               <List>
                 {this.state.books.map(book => (
@@ -85,7 +80,7 @@ class Books extends Component {
                 ))}
               </List>
             ) : (
-                <h3 style={{color:"white"}}>No Results to Display</h3>
+                <h5 style={{color:""}}>No Results to Display</h5>
               )}
           </Col>
         </Row>
