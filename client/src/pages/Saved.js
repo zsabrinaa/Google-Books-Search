@@ -32,7 +32,7 @@ return(
     <Container fluid>
           <Col size="md-12 sm-12">
             <Jumbotron>
-              <h1>Books Collection </h1>
+              <h4>Books Collection </h4>
             </Jumbotron>
             {this.state.books.length ? (
               <List>
