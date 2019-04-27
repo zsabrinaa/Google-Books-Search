@@ -42,7 +42,7 @@ return(
                     <BookDetail
                       src={book.src}
                       title={book.title} 
-                      author={book.authors}
+                      author={book.author}
                     />
                   </Link>
                   <DeleteBtn onClick={() => this.deleteBook(book._id)} />

@@ -52,7 +52,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h3>Searching For Books Here</h3>
+              <h4>Searching For Books Here</h4>
             </Jumbotron>
             <SearchForm
               value={this.state.search}
@@ -62,7 +62,7 @@ class Books extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h3>Result(s)</h3>
+              <h4>Result(s)</h4>
             </Jumbotron>
             {this.state.books.length ? (
               <List>

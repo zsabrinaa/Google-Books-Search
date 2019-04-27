@@ -22,9 +22,9 @@ class Detail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
+              <h4>
                 {this.state.book.title} by {this.state.book.author}
-              </h1>
+              </h4>
             </Jumbotron>
           </Col>
         </Row>
