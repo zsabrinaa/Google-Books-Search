@@ -32,7 +32,10 @@ class Detail extends Component {
           <Col size="md-10 md-offset-1">
             <article>
               <h1>Synopsis</h1>
-              <p>{this.state.book.synopsis}</p>
+               {this.state.book.synopsis ? (
+                 <p>{this.state.book.synopsis}</p>
+               ): ( <h3>No Synopsis to Display</h3>)
+               }              
             </article>
           </Col>
         </Row>
