@@ -33,7 +33,7 @@ class Detail extends Component {
             <article>
               <h1>Synopsis</h1>
                {this.state.book.synopsis ? (
-                 <p>{this.state.book.synopsis}</p>
+                 <p style={{backgroundColor:"white",opacity:"0.8"}}>{this.state.book.synopsis}</p>
                ): ( <h3>No Synopsis to Display</h3>)
                }              
             </article>
