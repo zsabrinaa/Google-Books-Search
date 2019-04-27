@@ -17,7 +17,6 @@ componentDidMount() {
   loadBooks = () => {
     API.getBooks()
       .then(res => {
-        console.log(res.data)
         this.setState({ books: res.data})
       })
       .catch(err => console.log(err));
